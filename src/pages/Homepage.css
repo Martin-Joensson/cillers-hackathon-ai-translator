@@ -1,8 +1,9 @@
-
-    /* <div>
-      <Searchbar />
-      <LanguageList />
-      <TextButton label="Start Interview" to="/conversation" className="text-button"/>
-      {/* <BtnStartInterview text="Start Interview" /> */
-
-
+.container-homepage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}

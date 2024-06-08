@@ -3,6 +3,7 @@
 export const MessageList = ({ messageArray }) => {
     
   return (
-<div></div>
+      <div>
+</div>
   )
 }

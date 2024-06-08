@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import "./TextButton.css"
+import PropTypes from "prop-types"
 
 export const TextButton = ({className, label, ariaLabel, to}) => {
   const buttonContent = (
@@ -12,5 +13,6 @@ export const TextButton = ({className, label, ariaLabel, to}) => {
   return to ? <Link to={to}>
     {buttonContent} </Link> : buttonContent;
 }
+
 
 

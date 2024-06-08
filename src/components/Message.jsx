@@ -1,13 +1,22 @@
-import "./Message.css"
+import { useState, useEffect } from "react";
+import { LoadingDots } from "./LoadingDots";
+import "./Message.css";
+
+
 
 export const Message = ({ message, translatedMessage, user }) => {
-  // We need the message.
+    const [isTranslated, setIsTranslated] = useState(false);
+  // We need the message,
   // Who sent the message,
-  //Translated message.
+  // and Translated message.
 
-    return <div className={user}>
-        <p>{message}</p>
-        <p>{translatedMessage</p>
-      
-  </div>;
-}
+  // The user influences the styling.
+  // everytime you send one message or one voiceclip it changes the user.
+
+  return (
+    <div className={user}>
+          <p>{message}</p>
+          {isTranslated ? <p>{translatedMessage}</p> : <LoadingDots />}
+    </div>
+  );
+};

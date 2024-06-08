@@ -1,4 +1,6 @@
 .user1 {
+    display: flex;
+    
     background: "blue";
     
 }
