@@ -11,12 +11,16 @@
 
 :root {
   --ligth-grey: #f4f8fe;
+  --grey: #a6b0c7;
   --dark-blue: #324578;
   --light-blue: #59b9ff;
-  --white: #FFFFFF;
+  --white: #ffffff;
 
   font-family: "Inter", sans-serif;
   color: var(--darkblue);
+
+  --text-size-small: 14px;
+  --text-size-medium: 16px;
 }
 
 body {
@@ -28,16 +32,9 @@ button {
   color: var(--white);
   border: none;
   border-radius: 20px;
-  padding: 10px 15px ;
-}
-
-input {
-  border: none;
-  outline: none;
-  background-color: white;
-  border-radius: 100px;
-  width: calc(100% - 80px);
-  padding-left: 10px;
-  color: black;
   padding: 10px 15px;
 }
+
+/* p {
+  font-size: 16px;
+} */
