@@ -1,0 +1,38 @@
+/* styling reusable button */
+
+
+
+
+
+/* styling non reusable buttons */
+.btn-container{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  border-radius: 30px;
+  padding-right: 15px;
+  background-color: blue;
+}
+
+.btn-container > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-container > a > img {
+  margin-right: 7px;
+}
+
+.btn-container > a > p{
+  color: #333333;
+  margin: 0;
+}
+
+.btnViewCode:hover,
+.btnViewCode:hover > a > p {
+  background-color: #eb5577;
+  color: white;
+}

@@ -1,0 +1,30 @@
+.message-form {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  border-radius: 100px;
+  background-color: white;
+  width: 353px;
+  height: 60px;
+  box-sizing: content-box;
+  justify-content: space-between;
+}
+
+.message-form > label {
+  display: none;
+}
+
+#messageForm {
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 100px 0 0 100px;
+  height: 64px;
+}
+
+.sendBtn {
+  width: fit;
+  border: none;
+  background-color: #59b9ff;
+  border-radius: 100px;
+}
