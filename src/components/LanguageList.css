@@ -1,23 +1,37 @@
 .languages-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 300px;
+  min-width: 300px;
+  width: 100%;
   gap: 3px;
-  align-items: center;
-
-  background-color: var(--white);
+  margin: 15px 15px 150px 15px;
 }
 
-/* <div>
-      {languageList.map((language, index) => (
-        <div key={index}>
-          <input
-            type="radio"
-            id={language}
-            value={language}
-            name="languageList"
-          />
-          <label htmlFor={language}>{language}</label>
-        </div>
-      ))}
-    </div> */
+.language-wrapper {
+  position: relative;
+  margin: 2px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  margin: 5px;
+}
+
+.input-button {
+  position: absolute;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+}
+
+.first-language{
+    border-radius: 15px 15px 0 0;
+}
+
+.last-language {
+  border-radius: 0 0 15px 15px;
+}

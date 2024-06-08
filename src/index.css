@@ -25,16 +25,36 @@
 
 body {
   background-color: var(--ligth-grey);
+  padding: 5px;
+}
+
+body > div {
+  min-width: 300px;
+  margin:  0 auto;
 }
 
 button {
   background-color: var(--light-blue);
   color: var(--white);
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
+  padding: 15px 15px;
+  width: 100%;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 100px;
+  width: calc(100% - 80px);
+  padding-left: 10px;
+  color: black;
   padding: 10px 15px;
 }
 
-/* p {
-  font-size: 16px;
-} */
+@media (min-width: 700px) {
+  body > div {
+    width: 400px;
+  }
+}

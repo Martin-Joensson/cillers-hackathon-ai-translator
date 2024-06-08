@@ -1,14 +1,34 @@
+.messageWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 4px;
+}
+
 .user1 {
   display: flex;
-  border: 2px;
-  border-color: red;
-  background: lightblue;
+  border-radius: 10px;
+  width: 250px;
+  padding: 4px;
+  margin-right: 8px;
+  background: rgba(255, 255, 255, 1);
 }
 
 .user2 {
-  background: red;
+  display: flex;
+  background: rgba(88, 185, 255, 1);
+  color: white;
+  display: flex;
+  width: 250px;
+  padding: 4px;
+  margin-left: 8px;
 }
 
 .translatedBox {
-    background: ivory;
+  display: flex;
+  color: black;
+  
+  background: rgba(244, 248, 254, 1);
+  border-radius: 5%;
+  margin: 4px;
+  padding: 4px;
 }
