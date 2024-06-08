@@ -4,17 +4,22 @@ export const useMessageStore = create((set, get) => ({
   loading: false,
   error: null,
   userInput: "",
-  userMessage: [],
-  translatedMessage: [],
+  messages: [],
   language: null,
   languageList: [],
-  setUserInput: (message) => {
-    set({ userInput: message })
+  setUserInput: message => {
+    set({ userInput: message });
   },
   sendMessage: () => {
     set(state => ({
-      userMessage: [...state.userMessage, get().userInput]
-    }))
-  }
+      messages: [
+        ...state.messages,
+        {
+          originalMsg: get().userInput,
+          Translation: "Translation placeholder",
+        },
+      ],
+    }));
+  },
   //create function for fetch translation via API
-}))
+}));

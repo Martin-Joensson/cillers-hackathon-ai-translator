@@ -11,12 +11,16 @@
 
 :root {
   --ligth-grey: #f4f8fe;
+  --grey: #a6b0c7;
   --dark-blue: #324578;
   --light-blue: #59b9ff;
   --white: #ffffff;
 
   font-family: "Inter", sans-serif;
   color: var(--darkblue);
+
+  --text-size-small: 14px;
+  --text-size-medium: 16px;
 }
 
 body {
