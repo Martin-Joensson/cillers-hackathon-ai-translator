@@ -1,7 +1,10 @@
 import { GrSend } from "react-icons/gr";
 import "./MessageForm.css";
+import { useMessageStore } from "../stores/useMessageStore.jsx";
 
-export const MessageForm = ({ onChange, message }) => {
+export const MessageForm = () => {
+  const { userInput, setUserInput } = useMessageStore();
+
   return (
     <form
       className="message-form"
@@ -12,10 +15,10 @@ export const MessageForm = ({ onChange, message }) => {
       <label>Send Message </label>
       <input
         type="text"
-        placeholder="Write your message here"
+        placeholder="Write your mess age here"
         id="messageForm"
-        onChange={onChange}
-        value={message}
+        onChange={(e) => setUserInput(e.target.value)}
+        value={userInput}
       />
       <button type="submit" className="sendBtn">
         <GrSend />

@@ -1,10 +1,14 @@
 .user1 {
-    display: flex;
-    
-    background: "blue";
-    
+  display: flex;
+  border: 2px;
+  border-color: red;
+  background: lightblue;
 }
 
 .user2 {
-    background: "red"
+  background: red;
+}
+
+.translatedBox {
+    background: ivory;
 }

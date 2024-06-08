@@ -1,4 +1,4 @@
-// import "./LanguageList.css"
+import "./LanguageList.css"
 
 export const LanguageList = () => {
   const languageList = [
@@ -10,9 +10,9 @@ export const LanguageList = () => {
   ];
 
   return (
-    <div>
+    <div className="languages-container">
       {languageList.map((language, index) => (
-        <div key={index}>
+        <div key={index} className="language-wrapper">
           <input
             type="radio"
             id={language}
