@@ -22,11 +22,13 @@
 body {
   background-color: var(--ligth-grey);
   padding: 5px;
+  background-color: grey;
 }
 
-body > div {
+body div {
   min-width: 300px;
   margin:  0 auto;
+  background-color: var(---ligth-grey);
 }
 
 button {
