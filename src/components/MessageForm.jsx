@@ -1,15 +1,18 @@
 import { GrSend } from "react-icons/gr";
-import "./MessageForm.css";
+
 import { useMessageStore } from "../stores/useMessageStore.jsx";
 
+import "./MessageForm.css";
+
 export const MessageForm = () => {
-  const { userInput, setUserInput } = useMessageStore();
+  const { sendMessage, userInput, setUserInput } = useMessageStore();
 
   return (
     <form
       className="message-form"
       onSubmit={(e) => {
         e.preventDefault();
+        sendMessage()
       }}
     >
       <label>Send Message </label>
