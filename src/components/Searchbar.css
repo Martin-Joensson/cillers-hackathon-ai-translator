@@ -1,0 +1,42 @@
+/* input {
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 100px;
+  width: calc(100% - 80px);
+  padding-left: 10px;
+  color: black;
+  padding: 10px 15px;
+}
+ */
+
+.search-container {
+  background-color: var(--white);
+  padding: 15px 30px;
+  border-radius: 100px;
+  width: 100%;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-container label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-icon {
+  opacity: 0.4;
+  font-size: 20px;
+}
+
+.search-container input {
+  border: transparent;
+  width: 100%;
+}
+
+.search-container input::placeholder {
+  color: var(--grey);
+  font-size: 16px;
+}
