@@ -7,20 +7,27 @@ export const Message = ({ message, translatedMessage, user }) => {
 
   // We need the message,
   // Who sent the message,
-    // and Translated message.
-    
-    useEffect(() => {
-          if(translatedMessage)
-        setIsTranslated(true);
-      }, []);
+  // and Translated message.
+
+  useEffect(() => {
+    if (translatedMessage) setIsTranslated(true);
+  }, [translatedMessage]);
 
   // The user influences the styling.
   // everytime you send one message or one voiceclip it changes the user.
 
   return (
     <div className={user}>
-      <p>{message}</p>
-      {isTranslated ? <div className="translatedBox"><p>{translatedMessage}</p></div> : <LoadingDots />}
+      <div className="messageWrapper">
+        <p>{message}</p>
+        {isTranslated ? (
+          <div className="translatedBox">
+            <p>{translatedMessage}</p>
+          </div>
+        ) : (
+          <LoadingDots />
+        )}
+      </div>
     </div>
   );
 };

@@ -13,7 +13,7 @@
   --ligth-grey: #f4f8fe;
   --dark-blue: #324578;
   --light-blue: #59b9ff;
-  --white: #FFFFFF;
+  --white: #ffffff;
 
   font-family: "Inter", sans-serif;
   color: var(--darkblue);
@@ -21,14 +21,21 @@
 
 body {
   background-color: var(--ligth-grey);
+  padding: 5px;
+}
+
+body > div {
+  min-width: 300px;
+  margin:  0 auto;
 }
 
 button {
   background-color: var(--light-blue);
   color: var(--white);
   border: none;
-  border-radius: 20px;
-  padding: 10px 15px ;
+  border-radius: 25px;
+  padding: 15px 15px;
+  width: 100%;
 }
 
 input {
@@ -40,4 +47,10 @@ input {
   padding-left: 10px;
   color: black;
   padding: 10px 15px;
+}
+
+@media (min-width: 700px) {
+  body > div {
+    width: 400px;
+  }
 }

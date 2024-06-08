@@ -13,7 +13,7 @@ export const LanguageList = () => {
     <div className="languages-container">
       {languageList.map((language, index) => (
         <div key={index} className="language-wrapper">
-          <input
+          <input className="input-button"
             type="radio"
             id={language}
             value={language}
