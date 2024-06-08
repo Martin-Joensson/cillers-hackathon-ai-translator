@@ -1,9 +1,18 @@
-import { TextButton } from "../components/Buttons/TextButton"
+import { TextButton } from "../components/Buttons/TextButton";
+import "./Transcript.css"
 
-export const Transcript = () => {
+export const Transcript = (setUserInput) => {
+
+  const handleStartNewInterview = () => {
+    // Clear the input-data
+    setUserInput("");
+}
   return (
-    <div>Transcript
-        <TextButton label="Start new interview" to="/" className="text-button" /* onClick={}  *//>
+    <div className="transcript-container"
+    >
+      <p>Transcript</p>
+        <TextButton label="Start new interview" to="/" className="text-button" onClick={handleStartNewInterview} />
     </div>
   )
 }
+

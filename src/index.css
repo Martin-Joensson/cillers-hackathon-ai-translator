@@ -25,12 +25,17 @@
 
 body {
   background-color: var(--ligth-grey);
-  padding: 5px;
+  padding: 50px 5px;
+  background-color: grey;
 }
 
 body > div {
   min-width: 300px;
   margin:  0 auto;
+  background-color: var(--ligth-grey);
+  padding: 30px 15px;
+  border-radius: 30px;
+  min-height: 80vh;
 }
 
 button {
@@ -40,9 +45,11 @@ button {
   border-radius: 25px;
   padding: 15px 15px;
   width: 100%;
+  font-size: var(--text-size-medium)
 }
 
-input {
+
+/* input {
   border: none;
   outline: none;
   background-color: white;
@@ -51,7 +58,7 @@ input {
   padding-left: 10px;
   color: black;
   padding: 10px 15px;
-}
+} */
 
 @media (min-width: 700px) {
   body > div {

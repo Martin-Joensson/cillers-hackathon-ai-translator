@@ -1,0 +1,8 @@
+.transcript-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.transcript-container a {
+  margin-top: auto;
+}

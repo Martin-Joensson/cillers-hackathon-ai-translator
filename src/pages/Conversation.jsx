@@ -7,7 +7,7 @@ import { MessageList } from "../components/MessageList";
 
 export const Conversation = () => {
   return (
-    <div>
+    <div className="main-container">
       <header>
         <img
           className="flag"

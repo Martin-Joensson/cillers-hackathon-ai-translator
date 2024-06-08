@@ -2,9 +2,9 @@ import { Link } from "react-router-dom"
 import "./TextButton.css"
 import PropTypes from "prop-types"
 
-export const TextButton = ({className, label, ariaLabel, to}) => {
+export const TextButton = ({className, label, ariaLabel, to, onClick}) => {
   const buttonContent = (
-    <button className={className} aria-label={ariaLabel || label}>
+    <button className={className} aria-label={ariaLabel || label} onClick={onClick}>
       {label}
       </button>
   );

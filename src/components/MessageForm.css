@@ -3,9 +3,10 @@
   flex-direction: row;
   border-radius: 100px;
   background-color: white;
-  width: 353px;
+  width: 90%;
   height: 60px;
   justify-content: space-between;
+  place-self: center;
 }
 
 .message-form > label {
@@ -30,5 +31,3 @@
   background-color: #59b9ff;
   border-radius: 100px;
 }
-
-

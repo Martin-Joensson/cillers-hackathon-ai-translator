@@ -6,6 +6,7 @@
 
 .user1 {
   display: flex;
+  flex-direction: column;
   border-radius: 10px;
   width: 250px;
   padding: 4px;
@@ -15,18 +16,18 @@
 
 .user2 {
   display: flex;
-  background: rgba(88, 185, 255, 1);
-  color: white;
-  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
   width: 250px;
   padding: 4px;
   margin-left: 8px;
+  background: rgba(88, 185, 255, 1);
 }
 
 .translatedBox {
   display: flex;
   color: black;
-  
+  width: 100%;
   background: rgba(244, 248, 254, 1);
   border-radius: 5%;
   margin: 4px;

@@ -7,16 +7,16 @@ export const useMessageStore = create((set, get) => ({
   messages: [],
   language: null,
   languageList: [],
-  setUserInput: message => {
+  setUserInput: (message) => {
     set({ userInput: message });
   },
   sendMessage: () => {
-    set(state => ({
+    set((state) => ({
       messages: [
         ...state.messages,
         {
           originalMsg: get().userInput,
-          Translation: "Translation placeholder",
+          translation: "Translation placeholder",
         },
       ],
     }));

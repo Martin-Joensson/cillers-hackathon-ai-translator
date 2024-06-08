@@ -12,12 +12,9 @@
 
 .search-container {
   background-color: var(--white);
-  padding: 15px 30px;
+  padding: 10px 30px;
   border-radius: 100px;
   width: 100%;
-  max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .search-container label {
@@ -39,4 +36,5 @@
 .search-container input::placeholder {
   color: var(--grey);
   font-size: 16px;
+  padding: 15px 0;
 }

@@ -6,7 +6,13 @@
 }
 
 header {
-    display: flex;
-    justify: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
+.main-container {
+  display: grid;
+  grid-template-rows: 60px auto 80px;
+  height: 100vh;
+  padding: 1rem 1rem;
+}
